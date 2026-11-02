@@ -1,0 +1,30 @@
+# ROS 2 工作区生成目录
+build/
+install/
+log/
+
+# 编译产物
+*.o
+*.so
+*.a
+__pycache__/
+*.pyc
+
+# 编辑器/系统
+.vscode/
+.idea/
+.DS_Store
+
+# 大文件
+*.bag
+
+# ===== 大文件 / 仿真数据（不提交，本地保留）=====
+# Point-LIO 建图输出
+src/pb2025_sentry_nav/point_lio/PCD/scans.pcd
+
+# 仿真建图数据（.db3 bag + 压缩包）
+src/pb2025_sentry_nav/pb2025_nav_bringup/pcd/simulation/rmul_20250127/
+src/pb2025_sentry_nav/pb2025_nav_bringup/pcd/simulation/rmul_20250127.zip
+
+# 通用大文件类型（按需保留）
+*.db3
